@@ -1,3 +1,4 @@
+package atividadeSemana5Q2;
 import java.util.ArrayList;
 
 public class Prioridade {

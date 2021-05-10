@@ -1,9 +1,10 @@
+package atividadeSemana5Q2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Teste {
 	
-	public static ArrayList<Processo> turnround = new ArrayList();
+	public static ArrayList<Processo> turnround = new ArrayList<Processo>();
 	
 	public static void main(String [] args){ 
 		//Processo processo1 = new Processo(120,"Diego","CPU",1,0);
@@ -12,7 +13,7 @@ public class Teste {
 		//Processo processo4 = new Processo(150,"Joao","CPU",2,4);
 		//Processo processo5 = new Processo(160,"Rosa","CPU",1,1);
 		
-		ArrayList<Processo> processos = new ArrayList();
+		ArrayList<Processo> processos = new ArrayList<Processo>();
 	    //processos.add(processo1);
 		//processos.add(processo2);
         //processos.add(processo3);
@@ -24,7 +25,7 @@ public class Teste {
 		
 		System.out.println("Escolha o Quantum:");
 		int quantum = sc.nextInt();
-		System.out.println("Quantos processos vão ser executados?");
+		System.out.println("Quantos processos vï¿½o ser executados?");
 		int qnt = sc.nextInt();
 		int pid;
 		String nome;
@@ -44,7 +45,7 @@ public class Teste {
 			}else {
 				typeName = "I/O Bound";
 			}
-			System.out.println("Qual o tempo para realização do Processo #" + (i+1) + "?");
+			System.out.println("Qual o tempo para realizaï¿½ï¿½o do Processo #" + (i+1) + "?");
 			tempo = sc.nextInt();
 			System.out.println("Qual o tempo para entrada do Processo #" + (i+1) + "?");
 			entrada = sc.nextInt();
