@@ -43,8 +43,8 @@ public class RoundRobin {
 				pause(500);
 				System.out.println("Realizando: PID " + p.getPid() + "| Nome: " + p.getNome());
 				System.out.println("Escalonamento: Round Robin");
-				System.out.println("Tempo Necess�rio: " + p.getTempo());
-				System.out.println("/////////Ap�s a realiza��o do processo durante o quantum///////");
+				System.out.println("Tempo Necessário: " + p.getTempo());
+				System.out.println("/////////Apos a realização do processo durante o quantum///////");
 				System.out.print("Aguardando:");
 
 				if(p.getTempo() >= quantum) {
@@ -90,7 +90,7 @@ public class RoundRobin {
 				if(p.getTempo() > 0) {
 					listaDeProcessos.remove(p);
 					listaDeProcessos.add(p);
-					System.out.println("\nPROCESSO N�O FINALIZADO");
+					System.out.println("\nPROCESSO NAO FINALIZADO");
 					System.out.println("Tempo restante:" + p.getTempo());
 				}else {
 					System.out.println("\nPROCESSO FINALIZADO");
@@ -113,6 +113,6 @@ public class RoundRobin {
 		for(int i = 0; i< Teste.turnround.size();i++) {
 			media += Teste.turnround.get(i).getEspera();
 		}
-		System.out.println("Tempo M�dio de Espera:" + media/(Teste.turnround.size()));
+		System.out.println("Tempo Medio de Espera:" + media/(Teste.turnround.size()));
 	}
 }

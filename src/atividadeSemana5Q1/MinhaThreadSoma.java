@@ -39,6 +39,7 @@ public class MinhaThreadSoma implements Runnable
 		System.out.println(a.nome+ " saiu da região Crítica.");
 		return null;
 	}
+	
 	@Override
 	public void run() {
 		System.out.println(this.nome+ " iniciada");

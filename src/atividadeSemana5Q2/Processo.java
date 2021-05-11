@@ -9,6 +9,7 @@ public class Processo {
 	private int turnround = 0;
 	private int espera = 0;
     private int entrada;
+    private int prioridade;
 
 	public Processo(int pid, String nome, String tipo, int tempo, int entrada) {
 		this.pid = pid;
@@ -16,6 +17,15 @@ public class Processo {
 		this.tipo = tipo;
 		this.tempo = tempo;
 		this.entrada = entrada;
+	}
+	
+	public Processo(int pid, String nome, String tipo, int tempo, int entrada, int prioridade) {
+		this.pid = pid;
+		this.nome = nome;
+		this.tipo = tipo;
+		this.tempo = tempo;
+		this.entrada = entrada;
+		this.prioridade = prioridade;
 	}
 	
 	@Override
@@ -77,6 +87,14 @@ public class Processo {
 
 	public void setEntrada(int entrada) {
 		this.entrada = entrada;
+	}
+	
+	public int getPrioridade() {
+		return prioridade;
+	}
+
+	public void setPrioridade(int prioridade) {
+		this.entrada = prioridade;
 	}
 	
 }
